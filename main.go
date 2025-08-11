@@ -47,9 +47,11 @@ Kafka Dog - Kafka命令行工具
   -h, --help               显示帮助信息
 
 示例:
-  kafka_dog -host 127.0.0.1:9092 -topic-list
-  kafka_dog -host 127.0.0.1:9092 -group-list
-  kafka_dog -host 127.0.0.1:9092 -sha-256 -usr admin -pwd 123456 -topic-list
+kafka_dog
+kafka_dog -host 127.0.0.1:9092 -topic-list
+kafka_dog -host 127.0.0.1:9092 -group-list
+kafka_dog -host 127.0.0.1:9092 -sha-256 -usr admin -pwd 123456 -topic-list
+kafka_dog -group-detail -group-name test -group-topic-keyword topicName
 
 `)
 	}
